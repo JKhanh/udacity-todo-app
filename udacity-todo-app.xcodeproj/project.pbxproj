@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1CFCD9B32C80621C0004D361 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFCD9B22C80621C0004D361 /* main.swift */; };
+		1CFCD9BA2C80624D0004D361 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFCD9B92C80624D0004D361 /* Todo.swift */; };
+		1CFCD9BD2C8062A40004D361 /* TodosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFCD9BC2C8062A40004D361 /* TodosManager.swift */; };
+		1CFCD9BF2C8066760004D361 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFCD9BE2C8066760004D361 /* App.swift */; };
+		1CFCD9C12C820A8D0004D361 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFCD9C02C820A8D0004D361 /* Cache.swift */; };
+		1CFCD9C32C820AF30004D361 /* InMemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFCD9C22C820AF30004D361 /* InMemoryCache.swift */; };
+		1CFCD9C52C820C340004D361 /* FileSystemCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFCD9C42C820C340004D361 /* FileSystemCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		1CFCD9AF2C80621C0004D361 /* udacity-todo-app */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "udacity-todo-app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CFCD9B22C80621C0004D361 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1CFCD9B92C80624D0004D361 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		1CFCD9BC2C8062A40004D361 /* TodosManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosManager.swift; sourceTree = "<group>"; };
+		1CFCD9BE2C8066760004D361 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		1CFCD9C02C820A8D0004D361 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		1CFCD9C22C820AF30004D361 /* InMemoryCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryCache.swift; sourceTree = "<group>"; };
+		1CFCD9C42C820C340004D361 /* FileSystemCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,31 @@
 		1CFCD9B12C80621C0004D361 /* udacity-todo-app */ = {
 			isa = PBXGroup;
 			children = (
+				1CFCD9C62C88554D0004D361 /* cache */,
+				1CFCD9BB2C8062540004D361 /* entities */,
 				1CFCD9B22C80621C0004D361 /* main.swift */,
+				1CFCD9BE2C8066760004D361 /* App.swift */,
+				1CFCD9BC2C8062A40004D361 /* TodosManager.swift */,
 			);
 			path = "udacity-todo-app";
+			sourceTree = "<group>";
+		};
+		1CFCD9BB2C8062540004D361 /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				1CFCD9B92C80624D0004D361 /* Todo.swift */,
+			);
+			path = entities;
+			sourceTree = "<group>";
+		};
+		1CFCD9C62C88554D0004D361 /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				1CFCD9C02C820A8D0004D361 /* Cache.swift */,
+				1CFCD9C22C820AF30004D361 /* InMemoryCache.swift */,
+				1CFCD9C42C820C340004D361 /* FileSystemCache.swift */,
+			);
+			path = cache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +155,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CFCD9B32C80621C0004D361 /* main.swift in Sources */,
+				1CFCD9C12C820A8D0004D361 /* Cache.swift in Sources */,
+				1CFCD9C32C820AF30004D361 /* InMemoryCache.swift in Sources */,
+				1CFCD9BF2C8066760004D361 /* App.swift in Sources */,
+				1CFCD9BD2C8062A40004D361 /* TodosManager.swift in Sources */,
+				1CFCD9C52C820C340004D361 /* FileSystemCache.swift in Sources */,
+				1CFCD9BA2C80624D0004D361 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
